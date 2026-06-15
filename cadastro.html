@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <nav>
+            
+                    <a href="sobre_mim.html">Sobre mim</a>               
+                    <a href="receitas.html">Receitas</a>                        
+                    <a href="meus_hobbies.html">Hobbies e interesses</a>
+                    <a href="contato.html">Página de contato</a>
+                    <a href="cadastro.html">Página de cadastro completo</a>
+        
+    </nav>
+
+    <h1>Cadastro de Usuário</h1>
+
+    <form action="#" method="post">
+
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome Completo:</label><br>
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                minlength="3"
+                maxlength="100">
+            <br><br>
+
+            <label for="dataNascimento">Data de Nascimento:</label><br>
+            <input
+                type="date"
+                id="dataNascimento"
+                name="dataNascimento"
+                required>
+            <br><br>
+
+            <label for="idade">Idade:</label><br>
+            <input
+                type="number"
+                id="idade"
+                name="idade"
+                required
+                min="0"
+                max="120">
+            <br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                required
+                pattern="[0-9]{10,11}"
+                maxlength="11">
+                
+        </fieldset>
+
+        <br>
+
+        
+        <fieldset>
+            <legend>Dados de Acesso</legend>
+
+            <label for="email">E-mail:</label><br>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                maxlength="100">
+            <br><br>
+
+            <label for="senha">Senha:</label><br>
+            <input
+                type="password"
+                id="senha"
+                name="senha"
+                required
+                minlength="8"
+                maxlength="20">
+        </fieldset>
+
+        <br>
+
+        
+        <fieldset>
+            <legend>Informações Complementares</legend>
+
+            <p>Gênero:</p>
+
+            <input type="radio" id="masculino" name="genero" value="Masculino" required>
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="feminino" name="genero" value="Feminino">
+            <label for="feminino">Feminino</label>
+
+            <input type="radio" id="outro" name="genero" value="Outro">
+            <label for="outro">Outro</label>
+
+            <br><br>
+
+            <p>Interesses:</p>
+
+            <input type="checkbox" id="tecnologia" name="interesses" value="Tecnologia">
+            <label for="tecnologia">Tecnologia</label>
+
+            <input type="checkbox" id="esportes" name="interesses" value="Esportes">
+            <label for="esportes">Esportes</label>
+
+            <input type="checkbox" id="musica" name="interesses" value="Música">
+            <label for="musica">Música</label>
+
+            <input type="checkbox" id="leitura" name="interesses" value="Leitura">
+            <label for="leitura">Leitura</label>
+
+            <br><br>
+
+            <label for="cidade">Cidade:</label><br>
+            <select id="cidade" name="cidade" required>
+                <option value="">Selecione uma cidade</option>
+                <option value="Timoteo">Timóteo</option>
+                <option value="Ipatinga">Ipatinga</option>
+                <option value="Coronel Fabriciano">Coronel Fabriciano</option>
+                <option value="Belo Horizonte">Belo Horizonte</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Enviar Cadastro</button>
+        <button type="reset">Limpar Formulário</button>
+
+    </form>
+
+</body>
+</html>
